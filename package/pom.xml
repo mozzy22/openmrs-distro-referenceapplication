@@ -273,6 +273,11 @@
 									<artifactId>xreports-omod</artifactId>
 									<destFileName>xreports-${xreportsVersion}.omod</destFileName>
 								</artifactItem>
+								<artifactItem>
+									<groupId>org.openmrs.module</groupId>
+									<artifactId>growthchart-omod</artifactId>
+									<destFileName>growthchart-${growthchartVersion}.omod</destFileName>
+								</artifactItem>
 							</artifactItems>
 							<outputDirectory>${project.build.directory}/distro</outputDirectory>
 						</configuration>

@@ -76,6 +76,7 @@
 		<owaVersion>1.5-SNAPSHOT</owaVersion>
 		<xformsVersion>4.3.9-SNAPSHOT</xformsVersion>
 		<xreportsVersion>1.4</xreportsVersion>
+		<growthchartVersion>2.1.0-SNAPSHOT</growthchartVersion>
 	</properties>
 
 	<dependencyManagement>
@@ -378,6 +379,12 @@
 				<version>${chartsearchVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>growthchart-api</artifactId>
+				<version>${growthchartVersion}</version>
+				<scope>provided</scope>
+			</dependency>
 			<!-- API test dependencies -->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
@@ -607,6 +614,13 @@
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>chartsearch-api</artifactId>
 				<version>${chartsearchVersion}</version>
+				<classifier>tests</classifier>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>growthchart-api</artifactId>
+				<version>${growthchartVersion}</version>
 				<classifier>tests</classifier>
 				<scope>provided</scope>
 			</dependency>
@@ -899,6 +913,12 @@
                 <version>${appointmentschedulinguiVersion}</version>
                 <scope>provided</scope>
             </dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>growthchart-omod</artifactId>
+				<version>${growthchartVersion}</version>
+				<scope>provided</scope>
+			</dependency>
 
 	<!-- Other dependencies -->		
 			<dependency>
